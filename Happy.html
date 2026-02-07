@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #fff0f5;
+      text-align: center;
+      margin-top: 120px;
+    }
+    input {
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+    }
+    button {
+      padding: 10px 25px;
+      background: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 20px;
+    }
+  </style>
+
+  <script>
+    function checkLogin() {
+      var user = document.getElementById("user").value;
+      var pass = document.getElementById("pass").value;
+
+      if (user === "love" && pass === "1234") {
+        window.location.href = "Birthday.html";
+      } else {
+        alert("Wrong details 😅 Try again");
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <h2>🔐 Login</h2>
+
+  <input type="text" id="user" placeholder="Username"><br>
+  <input type="password" id="pass" placeholder="Password"><br><br>
+
+  <button onclick="checkLogin()">Login</button>
+
+</body>
+</html>
