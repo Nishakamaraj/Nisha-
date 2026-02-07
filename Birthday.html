@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Birthday ❤️</title>
+
+  <style>
+    body {
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding-top: 60px;
+      overflow: hidden;
+    }
+
+    .box {
+      background: white;
+      width: 85%;
+      margin: auto;
+      padding: 25px;
+      border-radius: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+      animation: fadeIn 2s;
+    }
+
+    h1 {
+      color: #e91e63;
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 17px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .heart {
+      position: fixed;
+      bottom: -20px;
+      font-size: 26px;
+      animation: floatUp 6s linear infinite;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(-800px); opacity: 0; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .tap {
+      font-size: 14px;
+      color: #666;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 🎶 Background Music -->
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    window.addEventListener('click', function () {
+      document.getElementById("bgMusic").play();
+    }, { once: true });
+  </script>
+
+  <!-- 💕 Floating Hearts -->
+  <span class="heart" style="left:5%">❤️</span>
+  <span class="heart" style="left:20%">💖</span>
+  <span class="heart" style="left:35%">💗</span>
+  <span class="heart" style="left:50%">❤️</span>
+  <span class="heart" style="left:65%">💞</span>
+  <span class="heart" style="left:80%">💖</span>
+  <span class="heart" style="left:95%">❤️</span>
+
+  <!-- 🎂 Main Content -->
+  <div class="box">
+    <h1>🎂 Happy Birthday ❤️🎉</h1>
+
+    <p>🥰 To my myulu..,</p>
+
+    <p>
+      Today is a very special day 💫 because the most special person in my life was born today 🎈  
+      You are not just my partner-to-be 💍 but also my happiness, my smile, and my peace 💖
+    </p>
+
+    <p>
+      🌟 May this year bring you  
+      💼 success,  
+      😊 endless smiles,  
+      💪 good health,  
+      ❤️ and all the love you truly deserve.
+    </p>
+
+    <p>
+      I’m really grateful to have you in my life 🙏💞  
+      Looking forward to celebrating many more birthdays together 🎂🎉💍
+    </p>
+
+    <p>
+      💌 Always yours,<br>
+      <b>— palli...💖✨</b>
+    </p>
+
+    <p class="tap">🎶 Tap anywhere to play music 🎶</p>
+  </div>
+
+</body>
+</html>
